@@ -39,7 +39,7 @@
   --muted:         #8FA79D;
   --muted-2:       #5E756E;
 
-  --font-display: 'Inter', sans-serif;
+  ---font-display: 'Inter', sans-serif;
   --font-body:    'Inter', sans-serif;
   --font-mono:    'IBM Plex Mono', monospace;
 
@@ -931,9 +931,9 @@ footer{
    ====================================================== */
 @media (prefers-reduced-motion: reduce){
   *, *::before, *::after{
-    animation-duration: 0.001ms !important;
+    animation-duration: 0.004ms !important;
     animation-iteration-count: 1 !important;
-    transition-duration: 0.001ms !important;
+    transition-duration: 0.004ms !important;
     scroll-behavior: auto !important;
   }
   .reveal{ opacity:1; transform:none; }
@@ -1038,7 +1038,7 @@ footer{
 <!-- ============ EXPERIENCE ============ -->
 <section id="experience">
   <div class="container">
-    <div class="section-head reveal">
+    <div class="section-head reveal-left">
       <div class="eyebrow">Experience</div>
       <h2>A path through quality, care &amp; production</h2>
       <p>Three roles, one throughline: keep operations accurate, coordinated, and accountable.</p>
@@ -1097,18 +1097,18 @@ footer{
 <!-- ============ HIGHLIGHTS ============ -->
 <section id="highlights">
   <div class="container">
-    <div class="section-head reveal">
+    <div class="section-head reveal-right">
       <div class="eyebrow">Key Contributions</div>
       <h2>Systems &amp; fixes that stuck</h2>
       <p>Concrete things built or improved, not just responsibilities held.</p>
     </div>
     <div class="highlights-grid">
-      <div class="hl-card reveal"><div class="hl-icon">01</div><h3>Daily Machine Reporting</h3><p>Per-machine daily reports that isolate shortfall causes and feed full-month production planning.</p></div>
-      <div class="hl-card reveal"><div class="hl-icon">02</div><h3>ID Labeling &amp; Traceability</h3><p>Designed and printed product/machine identification labels, streamlining order prep and quality accountability.</p></div>
-      <div class="hl-card reveal"><div class="hl-icon">03</div><h3>Faulty Ticket Review</h3><p>Reviewed faulty tickets and coached agents directly on the errors behind them, reducing recurrence.</p></div>
-      <div class="hl-card reveal"><div class="hl-icon">04</div><h3>Call Quality Reporting</h3><p>Monitored calls, surfaced error patterns, and shared structured quality findings with the Team Leader.</p></div>
-      <div class="hl-card reveal"><div class="hl-icon">05</div><h3>Equipment Calibration</h3><p>Maintained and calibrated QA/QC testing equipment to keep measurements precise and defensible.</p></div>
-      <div class="hl-card reveal"><div class="hl-icon">06</div><h3>Cross-Dept Coordination</h3><p>Weekly plan presentations that align production with warehouse, sales, and materials teams in advance.</p></div>
+      <div class="hl-card reveal-right"><div class="hl-icon">01</div><h3>Daily Machine Reporting</h3><p>Per-machine daily reports that isolate shortfall causes and feed full-month production planning.</p></div>
+      <div class="hl-card reveal-left"><div class="hl-icon">02</div><h3>ID Labeling &amp; Traceability</h3><p>Designed and printed product/machine identification labels, streamlining order prep and quality accountability.</p></div>
+      <div class="hl-card reveal-right"><div class="hl-icon">03</div><h3>Faulty Ticket Review</h3><p>Reviewed faulty tickets and coached agents directly on the errors behind them, reducing recurrence.</p></div>
+      <div class="hl-card reveal-left"><div class="hl-icon">04</div><h3>Call Quality Reporting</h3><p>Monitored calls, surfaced error patterns, and shared structured quality findings with the Team Leader.</p></div>
+      <div class="hl-card reveal-right"><div class="hl-icon">05</div><h3>Equipment Calibration</h3><p>Maintained and calibrated QA/QC testing equipment to keep measurements precise and defensible.</p></div>
+      <div class="hl-card reveal-left"><div class="hl-icon">06</div><h3>Cross-Dept Coordination</h3><p>Weekly plan presentations that align production with warehouse, sales, and materials teams in advance.</p></div>
     </div>
   </div>
 </section>
@@ -1165,18 +1165,18 @@ footer{
 <!-- ============ EDUCATION ============ -->
 <section id="education">
   <div class="container">
-    <div class="section-head reveal">
+    <div class="section-head reveal-left">
       <div class="eyebrow">Education &amp; Certifications</div>
       <h2>Formal foundation, applied skills</h2>
     </div>
     <div class="edu-grid">
-      <div class="edu-card reveal">
+      <div class="edu-card reveal-right">
         <div class="edu-year">May 2021</div>
         <div class="edu-title">Bachelor's Degree — English</div>
         <div class="edu-sub">Faculty of Education</div>
         <div class="edu-desc">Four-year degree grounding strong bilingual written and verbal communication.</div>
       </div>
-      <div class="edu-card reveal">
+      <div class="edu-card reveal-right">
         <div class="edu-year">Aspire Consulting Intl.</div>
         <div class="edu-title">HR — Recruitment, Compensation &amp; Benefits</div>
         <div class="edu-sub">Professional Course</div>
@@ -1194,7 +1194,7 @@ footer{
 
 <!-- ============ CONTACT ============ -->
 <section id="contact" class="contact-section">
-  <div class="container reveal">
+  <div class="container reveal-left">
     <div class="eyebrow">Contact</div>
     <h2 class="contact-title">Let's build something <span>reliable</span> together.</h2>
     <p class="contact-sub">Open to Production Supervision, Quality Assurance, and Operations roles where accuracy and clear reporting move the needle.</p>
