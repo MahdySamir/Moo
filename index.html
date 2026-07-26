@@ -736,7 +736,23 @@ body.cursor-active a, body.cursor-active button{ cursor:none; }
   transition: transform .3s var(--ease), border-color .3s, box-shadow .3s;
 }
 .pill-btn:hover{ transform: translateY(-3px); border-color: var(--teal); box-shadow: 0 12px 28px rgba(0,242,254,0.18); }
-.pill-btn .dot{ width:6px; height:6px; border-radius:50%; background: var(--amber); }
+.pill-btn svg{ width:16px; height:16px; flex-shrink:0; }
+.pill-btn.call svg{ color: var(--teal); }
+.pill-btn.whatsapp svg{ color: #25D366; }
+.pill-btn.mail svg{ color: var(--amber); }
+.contact-numbers{
+  display:flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items:center;
+  margin-bottom: 16px;
+}
+.contact-numbers .num-row{
+  display:flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content:center;
+}
 
 .contact-loc{
   margin-top: 34px;
@@ -991,7 +1007,7 @@ footer{
           <div class="skill-track"><div class="skill-fill"></div></div>
         </div>
         <div class="skill-row reveal" style="--fill:88%">
-          <div class="skill-top"><span class="s-name">MS Office (Excel · Word · PowerPoint · Outlook)</span><span class="s-val">88%</span></div>
+          <div class="skill-top"><span class="s-name">MS Office (Excel · Word · PowerPoint)</span><span class="s-val">88%</span></div>
           <div class="skill-track"><div class="skill-fill"></div></div>
         </div>
       </div>
@@ -1041,12 +1057,33 @@ footer{
       <div class="ripple-core">✆</div>
     </div>
 
+    <div class="contact-numbers">
+      <div class="num-row">
+        <a class="pill-btn call" href="tel:01159718694" data-nav>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          01159718694
+        </a>
+        <a class="pill-btn whatsapp" href="https://wa.me/201159718694" target="_blank" rel="noopener" data-nav>
+          <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16 3C9.37 3 4 8.37 4 15c0 2.49.74 4.8 2 6.73L4 29l7.46-1.96A11.94 11.94 0 0 0 16 27c6.63 0 12-5.37 12-12S22.63 3 16 3zm0 21.75c-2.02 0-3.98-.55-5.68-1.58l-.41-.24-4.43 1.16 1.18-4.31-.26-.44A9.71 9.71 0 0 1 6.25 15c0-5.38 4.37-9.75 9.75-9.75S25.75 9.62 25.75 15 21.38 24.75 16 24.75zm5.36-7.3c-.29-.15-1.74-.86-2.01-.96-.27-.1-.47-.15-.66.14-.2.3-.76.96-.93 1.15-.17.2-.35.22-.64.08-.29-.15-1.24-.46-2.37-1.46-.87-.78-1.46-1.75-1.64-2.04-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.2-.3.29-.49.1-.2.05-.37-.03-.51-.07-.15-.66-1.6-.91-2.19-.24-.58-.48-.5-.66-.51l-.57-.01c-.2 0-.51.07-.78.37-.27.29-1.03 1.01-1.03 2.45s1.05 2.85 1.2 3.05c.15.2 2.07 3.17 5.02 4.44.7.3 1.25.48 1.68.62.7.22 1.35.19 1.85.12.57-.08 1.74-.71 1.99-1.4.24-.69.24-1.28.17-1.4-.07-.12-.27-.2-.56-.34z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+      <div class="num-row">
+        <a class="pill-btn call" href="tel:01551015677" data-nav>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          01551015677
+        </a>
+        <a class="pill-btn whatsapp" href="https://wa.me/201551015677" target="_blank" rel="noopener" data-nav>
+          <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16 3C9.37 3 4 8.37 4 15c0 2.49.74 4.8 2 6.73L4 29l7.46-1.96A11.94 11.94 0 0 0 16 27c6.63 0 12-5.37 12-12S22.63 3 16 3zm0 21.75c-2.02 0-3.98-.55-5.68-1.58l-.41-.24-4.43 1.16 1.18-4.31-.26-.44A9.71 9.71 0 0 1 6.25 15c0-5.38 4.37-9.75 9.75-9.75S25.75 9.62 25.75 15 21.38 24.75 16 24.75zm5.36-7.3c-.29-.15-1.74-.86-2.01-.96-.27-.1-.47-.15-.66.14-.2.3-.76.96-.93 1.15-.17.2-.35.22-.64.08-.29-.15-1.24-.46-2.37-1.46-.87-.78-1.46-1.75-1.64-2.04-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.2-.3.29-.49.1-.2.05-.37-.03-.51-.07-.15-.66-1.6-.91-2.19-.24-.58-.48-.5-.66-.51l-.57-.01c-.2 0-.51.07-.78.37-.27.29-1.03 1.01-1.03 2.45s1.05 2.85 1.2 3.05c.15.2 2.07 3.17 5.02 4.44.7.3 1.25.48 1.68.62.7.22 1.35.19 1.85.12.57-.08 1.74-.71 1.99-1.4.24-.69.24-1.28.17-1.4-.07-.12-.27-.2-.56-.34z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+    </div>
     <div class="contact-actions">
-      <a class="pill-btn" href="tel:01159718694" data-nav><span class="dot"></span> 01159718694</a> 
-         <a href="https://wa.me/201159718694" target="_blank" title="محادثة واتساب" class="icon-link whatsapp-btn">
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
-      <a class="pill-btn" href="mailto:Mahdyafya22@outlook.com" data-nav><span class="dot"></span> Mahdyafya22@outlook.com</a>
+      <a class="pill-btn mail" href="mailto:Mahdyafya22@outlook.com" data-nav>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+        Mahdyafya22@outlook.com
+      </a>
     </div>
     <div class="contact-loc">MENOUFIA, EGYPT</div>
   </div>
